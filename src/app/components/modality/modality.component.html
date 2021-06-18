@@ -1,4 +1,3 @@
-
 <app-header></app-header>
 <ion-content [fullscreen]="true">
  
@@ -6,16 +5,16 @@
   <ion-row>
     
 
-    <ion-col size-xs="12" size-md="6" size-lg= "6" size-xl="4"  *ngFor= "let c of Carrers;" > 
-      <ion-card routerLink= "/modality/{{c.id}}">
+    <ion-col size-xs="12" size-md="6" size-lg= "6" size-xl="4"  *ngFor= "let m of Modality;" > 
+      <ion-card routerLink= "/modality/{{m.id}}">
         <ion-card-header>
           
-          <ion-card-title >{{c.title}}</ion-card-title>
+          <ion-card-title >{{m.title}}</ion-card-title>
         </ion-card-header>
       
         <ion-card-content >
         
-          <img src= "{{c.img}}">
+          
           
         </ion-card-content>
       </ion-card>

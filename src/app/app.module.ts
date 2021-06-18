@@ -11,10 +11,10 @@ import{HomeComponent} from './components/home/home.component';
 import{CarrersComponent} from './components/carrers/carrers.component';
 import{HeaderComponent} from './components/header/header.component';
 import{AdministracionComponent} from './components/administracion/administracion.component';
-
+import{ModalityComponent} from './components/modality/modality.component';
 
 @NgModule({
-  declarations: [AppComponent,HomeComponent,CarrersComponent,HeaderComponent,AdministracionComponent],
+  declarations: [AppComponent,HomeComponent,CarrersComponent,HeaderComponent,AdministracionComponent,ModalityComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],

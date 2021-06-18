@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarrersComponent implements OnInit {
 
+  public Carrers = [
+    { title: 'Ingenieria en sistemas', id: 'System',  img:"https://cdn.svgporn.com/logos/hotjar.svg" },
+    { title: 'Ingenieria en Computacion', id: 'Computer', img: "https://cdn.svgporn.com/logos/hotjar.svg" },
+    {title: 'Ingenieria Telematica', id: 'Telecom', img: "https://cdn.svgporn.com/logos/hotjar.svg"},
+    
+  ];
+
   constructor() { }
 
   ngOnInit() {}
