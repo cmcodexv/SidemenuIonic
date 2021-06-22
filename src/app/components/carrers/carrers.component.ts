@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class CarrersComponent implements OnInit {
 
   public Carrers = [
-    { title: 'Ingenieria en sistemas', id: 'System',  img:"https://cdn.svgporn.com/logos/hotjar.svg" },
-    { title: 'Ingenieria en Computacion', id: 'Computer', img: "https://cdn.svgporn.com/logos/hotjar.svg" },
-    {title: 'Ingenieria Telematica', id: 'Telecom', img: "https://cdn.svgporn.com/logos/hotjar.svg"},
+    { title: 'Ingenieria en sistemas', id: 'System',  img:"https://svgsilh.com/svg/2237420.svg" },
+    { title: 'Ingenieria en Computacion', id: 'Computer', img: "https://svgsilh.com/svg/152668.svg" },
+    {title: 'Ingenieria en Telematica', id: 'Telecom', img: "https://svgsilh.com/svg/159833.svg"},
     
   ];
 

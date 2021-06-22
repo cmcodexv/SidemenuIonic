@@ -7,7 +7,7 @@
     
 
     <ion-col size-xs="12" size-md="6" size-lg= "6" size-xl="4"  *ngFor= "let c of Carrers;" > 
-      <ion-card routerLink= "/modality/{{c.id}}">
+      <ion-card  routerLink= "/modality/{{c.id}}">
         <ion-card-header>
           
           <ion-card-title >{{c.title}}</ion-card-title>
@@ -15,10 +15,14 @@
       
         <ion-card-content >
         
-          <img src= "{{c.img}}">
+          <div class="imagen">
+
+            <img src= "{{c.img}}" width="30px" height="30px" >
+          </div>
           
-        </ion-card-content>
-      </ion-card>
+          
+        </ion-card-content >
+      </ion-card >
     
     </ion-col>
 
