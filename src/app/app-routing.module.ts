@@ -4,6 +4,7 @@ import{HomeComponent} from './components/home/home.component';
 import{CarrersComponent} from './components/carrers/carrers.component';
 //import{AdministracionComponent} from './components/administracion/administracion.component';
 import{ModalityComponent} from './components/modality/modality.component';
+import { DaysComponent } from './components/days/days.component';
 
 const routes: Routes = [
 
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path:'home', component:HomeComponent},
   {path:'carrers', component:CarrersComponent},
   {path:'modality/:id', component:ModalityComponent},
+  {path: 'days/:id', component:DaysComponent},
   //{path: 'administracion', component: AdministracionComponent},
   //{path: 'search', component: SearchComponent},
   {path: '**', pathMatch: 'full', redirectTo: 'home'}, //siempre dejar de ultimo

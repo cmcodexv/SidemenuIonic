@@ -8,32 +8,29 @@ import { ActivatedRoute} from '@angular/router'; //nos deja consumir la ruta act
 })
 export class ModalityComponent implements OnInit {
 
-  public Modality = [
-    
-           
-    
-  ] ;
+  public modality = [] ;
 
-  public System =[
+  public system =[
 
-    { title: 'Diurno', id: 'diurno' },
-    { title: 'Sabatino', id: 'sabatino' },
+    { title: 'Diurno', id: 'sdiurno' },
+    { title: 'Sabatino', id: 'ssabatino' },
    
-
   ];
 
-  public Computer =[
+  public computer =[
 
-    { title: 'Diurno', id: 'diurno' },
+    { title: 'Diurno', id: 'cdiurno' },
     
-    { title: 'Dominical', id: 'dominical' }
+    { title: 'Dominical', id: 'cdominical' }
 
 
   ];
 
-  public Telecom =[
+  public telecom =[
 
-    { title: 'Sabatino', id: 'diurno' },
+    {title:'Diurno', id: 'tdiurno'},
+
+    { title: 'Dominical', id: 'tdominical' }
     
     //{ title: 'Dominical', id: 'dominical' }
 
@@ -50,22 +47,22 @@ export class ModalityComponent implements OnInit {
     switch(id)
     {
       
-      case 'Computer' :
+      case 'computer' :
 
-      this.Modality= this.Computer; // se le asigna el valor de computer a modality
+      this.modality= this.computer; // se le asigna el valor de computer a modality
 
       break;
 
-      case 'System':
+      case 'system':
 
-      this.Modality= this.System;
+      this.modality= this.system;
 
-      console.log(this.Modality);
+      
       break;
 
-      case 'Telecom':
-        this.Modality= this.Telecom;
-        console.log(this.Modality);
+      case 'telecom':
+        this.modality= this.telecom;
+        
       break;
 
     }

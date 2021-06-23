@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarrersComponent implements OnInit {
 
-  public Carrers = [
-    { title: 'Ingenieria en sistemas', id: 'System',  img:"https://svgsilh.com/svg/2237420.svg" },
-    { title: 'Ingenieria en Computacion', id: 'Computer', img: "https://svgsilh.com/svg/152668.svg" },
-    {title: 'Ingenieria en Telematica', id: 'Telecom', img: "https://svgsilh.com/svg/159833.svg"},
+  public carrers = [
+    { title: 'Ingenieria en sistemas', id: 'system',  img:"https://svgsilh.com/svg/2237420.svg" },
+    { title: 'Ingenieria en Computacion', id: 'computer', img: "https://svgsilh.com/svg/152668.svg" },
+    {title: 'Ingenieria en Telematica', id: 'telecom', img: "https://svgsilh.com/svg/159833.svg"},
     
   ];
 
