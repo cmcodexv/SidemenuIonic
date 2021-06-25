@@ -19,8 +19,8 @@ export class DaysComponent implements OnInit {
 
   public cdiurno=[
 
-    {title:'Lunes', id: 'dlunes'},
-    {title:'Jueves', id: 'djueves'}
+    {title:'Lunes', id: 'clunes'},
+    {title:'Jueves', id: 'cjueves'}
   ];
 
   public tdiurno=[
@@ -37,12 +37,12 @@ export class DaysComponent implements OnInit {
 
   public cdominical=[
 
-    {title:'Dominical', id:'cdominical'}
+    {title:'Dominical', id:'cdomingo'}
   ];
 
   public tdominical=[
 
-    {title:'Dominical', id:'tdominical'}
+    {title:'Dominical', id:'tdomingo'}
   ];
 
   constructor(private active:ActivatedRoute) {this.active.params.subscribe(param=>this.getModality(param.id))}

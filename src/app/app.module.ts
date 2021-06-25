@@ -13,9 +13,9 @@ import{HeaderComponent} from './components/header/header.component';
 import{AdministracionComponent} from './components/administracion/administracion.component';
 import{ModalityComponent} from './components/modality/modality.component';
 import { DaysComponent } from './components/days/days.component';
-
+import{AnniosComponent}  from './components/annios/annios.component';
 @NgModule({
-  declarations: [AppComponent,HomeComponent,CarrersComponent,HeaderComponent,AdministracionComponent,ModalityComponent,DaysComponent],
+  declarations: [AppComponent,HomeComponent,CarrersComponent,HeaderComponent,AdministracionComponent,ModalityComponent,DaysComponent, AnniosComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
