@@ -6,6 +6,7 @@ import{CarrersComponent} from './components/carrers/carrers.component';
 import{ModalityComponent} from './components/modality/modality.component';
 import { DaysComponent } from './components/days/days.component';
 import{AnniosComponent}  from './components/annios/annios.component';
+import { ClassComponent } from './components/class/class.component';
 
 const routes: Routes = [
 
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path:'modality/:id', component:ModalityComponent},
   {path: 'days/:id', component:DaysComponent},
   {path: 'annios/:id', component:AnniosComponent},
+  {path: 'class/:id', component:ClassComponent},
   //{path: 'administracion', component: AdministracionComponent},
   //{path: 'search', component: SearchComponent},
   {path: '**', pathMatch: 'full', redirectTo: 'home'}, //siempre dejar de ultimo
