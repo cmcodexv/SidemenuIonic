@@ -10,7 +10,7 @@ import { ClassComponent } from './components/class/class.component';
 
 const routes: Routes = [
 
-  {path: '', component: HomeComponent},
+  //{path: '', component: HomeComponent},
   {path:'home', component:HomeComponent},
   {path:'carrers', component:CarrersComponent},
   {path:'modality/:id', component:ModalityComponent},
@@ -19,7 +19,7 @@ const routes: Routes = [
   {path: 'class/:id', component:ClassComponent},
   //{path: 'administracion', component: AdministracionComponent},
   //{path: 'search', component: SearchComponent},
-  {path: '**', pathMatch: 'full', redirectTo: 'home'}, //siempre dejar de ultimo
+  {path: '**', pathMatch: 'full', redirectTo: '##'}, //siempre dejar de ultimo
   
   
 

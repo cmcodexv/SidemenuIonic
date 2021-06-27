@@ -37,10 +37,10 @@ export class AnniosComponent implements OnInit {
   public dlcomputacion=[
        
     
-    {title:'2do Año', id:'dcsegundoAño'},
-    {title:'3er Año', id:'dctercerAño'},
-    {title:'4to Año', id:'dccuartoAño'},
-    {title:'5to Año', id:'dcquintoAño'},
+    {title:'2do Año', id:'dlcsegundoAño'},
+    {title:'3er Año', id:'dlctercerAño'},
+    {title:'4to Año', id:'dlccuartoAño'},
+    {title:'5to Año', id:'dlcquintoAño'},
   
 
   ];
@@ -70,30 +70,30 @@ export class AnniosComponent implements OnInit {
   public dltelematica=[ // se coloca dtelematica(diurno) porque cuando el usuario presione lunes y luego primer año
                       // entonces se mostraran las clases de ese dia.
     {title:'1er Año', id:'dltprimerAño'},
-    {title:'2do Año', id:'dltsegundoAño'},
+   /* {title:'2do Año', id:'dltsegundoAño'},
     {title:'3er Año', id:'dlttercerAño'},
     {title:'4to Año', id:'dltcuartoAño'},
-    {title:'5to Año', id:'dltquintoAño'},
+    {title:'5to Año', id:'dltquintoAño'},*/
   
   ];
 
   public djtelematica=[ // se coloca dtelematica(diurno) porque cuando el usuario presione lunes y luego primer año
     // entonces se mostraran las clases de ese dia.
 {title:'1er Año', id:'djtprimerAño'},
-{title:'2do Año', id:'djtsegundoAño'},
+/*{title:'2do Año', id:'djtsegundoAño'},
 {title:'3er Año', id:'djttercerAño'},
 {title:'4to Año', id:'djtcuartoAño'},
-{title:'5to Año', id:'djtquintoAño'},
+{title:'5to Año', id:'djtquintoAño'},*/
 
 ];
 
   public dotelematica=[
        
     {title:'1er Año', id:'dotprimerAño'},
-    {title:'2do Año', id:'dotsegundoAño'},
+    /*{title:'2do Año', id:'dotsegundoAño'},
     {title:'3er Año', id:'dottercerAño'},
     {title:'4to Año', id:'dotcuartoAño'},
-    {title:'5to Año', id:'dotquintoAño'},
+    {title:'5to Año', id:'dotquintoAño'},*/
   
   ];
 

@@ -29,20 +29,14 @@ export class DaysComponent implements OnInit {
     {title:'Jueves', id: 'tjueves'}
   ];
 
-  public ssabatino=[
-
-    {title: 'Sabado', id:'ssabado'},
-    
-  ];
-
   public cdominical=[
 
-    {title:'Dominical', id:'cdomingo'}
+    {title:'Domingo', id:'cdomingo'}
   ];
 
   public tdominical=[
 
-    {title:'Dominical', id:'tdomingo'}
+    {title:'Domingo', id:'tdomingo'}
   ];
 
   constructor(private active:ActivatedRoute) {this.active.params.subscribe(param=>this.getModality(param.id))}
@@ -72,13 +66,6 @@ export class DaysComponent implements OnInit {
 
       this.days= this.tdiurno; // se le asigna el valor de computer a modality
       console.log(this.tdiurno);
-      break;
-
-      case 'ssabatino':
-
-      this.days= this.ssabatino;
-      console.log('Hola');
-      
       break;
 
       case 'cdominical':

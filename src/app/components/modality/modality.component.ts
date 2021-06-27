@@ -13,7 +13,7 @@ export class ModalityComponent implements OnInit {
   public system =[
 
     { title: 'Diurno', id: 'sdiurno' },
-    { title: 'Sabatino', id: 'ssabatino' },
+    
    
   ];
 
