@@ -1,0 +1,48 @@
+<app-header></app-header>
+<ion-content class="ion-padding" class="ion-text-center">
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+  <ion-grid>
+    <form (ngSubmit)="login( flogin )" #flogin="ngForm" >
+    <ion-row>
+      <ion-col size="12">
+        <ion-label>Iniciar Sesión</ion-label>
+      </ion-col>
+      <br>
+      <ion-col size-sm="4" offset-sm="4" size-md="8" offset-md="2" size-lg="8" offset-lg="4"  size-xl="4" offset-xl="4">
+        <ion-item >
+          <ion-icon  slot="start" name="mail"></ion-icon>
+          <ion-input type="email" name="email" [(ngModel)]="user.email" placeholder="correo electrónico"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-sm="4" offset-sm="4" size-md="8" offset-md="2" size-lg="4" offset-lg="4"  size-xl="4" offset-xl="4">
+        <ion-item>
+          <ion-icon   slot="start" name="key" ></ion-icon>
+          <ion-input  type="password" name="password" [(ngModel)]="user.password" placeholder="contraseña"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size-sm="4" offset-sm="4" size-md="8" offset-md="2" size-lg="4" offset-lg="4"  size-xl="4" offset-xl="4">
+        <div class="ion-padding">
+          <ion-button  expand="block" type="submit" [disabled]="!flogin.valid" >Entrar</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </form> 
+
+  <ion-button style="font-size: 12px;"  size="small" fill="clear" shape="round">
+    Olvidé mi contraseña
+  </ion-button>
+      
+   
+  
+  
+  </ion-grid>
+</ion-content>
