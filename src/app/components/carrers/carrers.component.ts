@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {LocalStorageService} from '../../services/localStorage.service';
 
 @Component({
   selector: 'app-carrers',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarrersComponent implements OnInit {
 
+  identity: string;
+
   public carrers = [
     { title: 'Ingenieria en sistemas', id: 'system',  img:"https://svgsilh.com/svg/2237420.svg" },
     { title: 'Ingenieria en Computacion', id: 'computer', img: "https://svgsilh.com/svg/152668.svg" },
@@ -14,8 +17,14 @@ export class CarrersComponent implements OnInit {
     
   ];
 
-  constructor() { }
+  constructor(
+    private localStorageService: LocalStorageService,
+  ) { }
 
-  ngOnInit() {}
+
+  async ngOnInit() {
+    // SACAR DATOS USUARIO IDENTIFICADO
+    this.identity =   await  this.localStorageService.getIdentity('identity');
+  }
 
 }

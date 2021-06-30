@@ -17,6 +17,9 @@ import { DaysComponent } from './components/days/days.component';
 import{AnniosComponent}  from './components/annios/annios.component';
 import{ClassComponent}  from './components/class/class.component';
 import{LoginComponent}  from './pages/login/login.component';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,

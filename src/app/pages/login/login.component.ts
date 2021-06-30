@@ -42,7 +42,7 @@ export class LoginComponent implements OnInit {
         };
         // PERSISTIR DATOS USUARIO IDENTIFICADO
         this.localStorageService.setItem('identity',  JSON.stringify(this.identity));
-        this.navCtrl.navigateRoot('/admin');
+        this.navCtrl.navigateRoot('/home');
 
     }else{
       const alert = await this.alertCtrl.create({

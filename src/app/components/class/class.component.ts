@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute} from '@angular/router';
+import {LocalStorageService} from '../../services/localStorage.service';
 
 @Component({
   selector: 'app-class',
@@ -7,6 +8,7 @@ import { ActivatedRoute} from '@angular/router';
   styleUrls: ['./class.component.scss'],
 })
 export class ClassComponent implements OnInit {
+  identity: string;
  //array clases
   public clases=[
 
@@ -246,9 +248,18 @@ public primerdotelematica=[
 
 
 
-  constructor(private active:ActivatedRoute) {this.active.params.subscribe(param=>this.getAnnios(param.id)) }
+  constructor(
+    private active:ActivatedRoute,
+    private localStorageService: LocalStorageService,
+    ) {
+      this.active.params.subscribe(param=>this.getAnnios(param.id)) 
+    }
 
-  ngOnInit() {}
+  
+    async ngOnInit() {
+      // SACAR DATOS USUARIO IDENTIFICADO
+      this.identity =   await  this.localStorageService.getIdentity('identity');
+    }
 
 
   getAnnios(id: string){

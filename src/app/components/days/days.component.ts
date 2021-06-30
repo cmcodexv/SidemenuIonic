@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute} from '@angular/router';
+import {LocalStorageService} from '../../services/localStorage.service';
 
 
 @Component({
@@ -8,6 +9,8 @@ import { ActivatedRoute} from '@angular/router';
   styleUrls: ['./days.component.scss'],
 })
 export class DaysComponent implements OnInit {
+  identity: string;
+
 
   public days = [] ;
 
@@ -39,9 +42,18 @@ export class DaysComponent implements OnInit {
     {title:'Domingo', id:'tdomingo'}
   ];
 
-  constructor(private active:ActivatedRoute) {this.active.params.subscribe(param=>this.getModality(param.id))}
+  constructor(
+    private localStorageService: LocalStorageService,
+    private active:ActivatedRoute
+    ) {
+      this.active.params.subscribe(param=>this.getModality(param.id))
+    }
 
-  ngOnInit() {}
+ 
+  async ngOnInit() {
+    // SACAR DATOS USUARIO IDENTIFICADO
+    this.identity =   await  this.localStorageService.getIdentity('identity');
+  }
 
   getModality(id: string) {
                     

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {LocalStorageService} from '../../services/localStorage.service';
 import { ActivatedRoute} from '@angular/router';
 
 @Component({
@@ -7,7 +8,7 @@ import { ActivatedRoute} from '@angular/router';
   styleUrls: ['./annios.component.scss'],
 })
 export class AnniosComponent implements OnInit {
-
+  identity: string;
   public annios=[ 
 
   ];
@@ -100,9 +101,18 @@ export class AnniosComponent implements OnInit {
 
 
 
-  constructor(private active:ActivatedRoute) {this.active.params.subscribe(param=>this.getDays(param.id)) }
+  constructor(
+    private active:ActivatedRoute,
+    private localStorageService: LocalStorageService,
+    ) {
+      this.active.params.subscribe(param=>this.getDays(param.id)) 
+    }
 
-  ngOnInit() {}
+
+  async ngOnInit() {
+    // SACAR DATOS USUARIO IDENTIFICADO
+    this.identity =   await  this.localStorageService.getIdentity('identity');
+  }
 
   getDays(id: string){
 

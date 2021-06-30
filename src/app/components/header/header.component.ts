@@ -18,13 +18,13 @@ export class HeaderComponent implements OnInit {
 
   async ngOnInit() {
     // SACAR DATOS USUARIO IDENTIFICADO
-    this.identity =   await  this.localStorageService.getItem('identity');
+    this.identity =   await  this.localStorageService.getIdentity('identity');
   }
 
   async logout() {
     // Eliminar datos del storage
    await this.localStorageService.removeItem('identity');
-   this.navCtrl.navigateRoot('/home');
+   this.navCtrl.navigateRoot('/');
   }
 
 }

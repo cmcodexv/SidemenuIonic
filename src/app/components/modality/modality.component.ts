@@ -1,12 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute} from '@angular/router'; //nos deja consumir la ruta activa o en la ruta que estamos
-                                              //hacer puente de la ruta al componente normal
+import { ActivatedRoute} from '@angular/router'; 
+//nos deja consumir la ruta activa o en la ruta que estamos
+//hacer puente de la ruta al componente normal
+import {LocalStorageService} from '../../services/localStorage.service';
 @Component({
   selector: 'app-modality',
   templateUrl: './modality.component.html',
   styleUrls: ['./modality.component.scss'],
 })
 export class ModalityComponent implements OnInit {
+  identity: string;
 
   public modality = [] ;
 
@@ -36,9 +39,18 @@ export class ModalityComponent implements OnInit {
 
 
   ];
-  constructor(private active:ActivatedRoute) {this.active.params.subscribe(param=>this.getCarrers(param.id)) }
+  constructor(
+    private active:ActivatedRoute, 
+    private localStorageService: LocalStorageService
+    ) {
+      this.active.params.subscribe(param=>this.getCarrers(param.id))
+     }
   //Nos suscribimos a params. Cada parametro me lo vas a mandar como argumento a este  metodo(get carrer)
-  ngOnInit() {}
+ 
+  async ngOnInit() {
+    // SACAR DATOS USUARIO IDENTIFICADO
+    this.identity =   await  this.localStorageService.getIdentity('identity');
+  }
 
   getCarrers(id: string) {
                     

@@ -11,12 +11,6 @@
               <ion-label>{{ p.title }}</ion-label>
             </ion-item>
           </ion-menu-toggle>
-          <ion-menu-toggle *ngIf="identity" auto-hide="false">
-            <ion-item routerDirection="root" routerLink="/admin" lines="none" detail="false">
-              <ion-icon slot="start" name="person" ></ion-icon>
-              <ion-label>Administración</ion-label>
-            </ion-item>
-          </ion-menu-toggle>
         </ion-list>
       </ion-content>
     </ion-menu>
