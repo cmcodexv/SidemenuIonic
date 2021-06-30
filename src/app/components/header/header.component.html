@@ -3,6 +3,13 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-icon class="login" routerLink="/login"  slot="end" name="person-outline"></ion-icon>
+    <ion-icon *ngIf="!identity" class="login" routerLink="/login"  slot="end" name="person-outline"></ion-icon>
+    <ion-chip *ngIf="identity"  slot="end">
+      <ion-avatar>
+        <img src="../../../assets/avatar.svg">
+      </ion-avatar>
+      <ion-label>Jean Morales</ion-label>
+    </ion-chip>
+    <ion-icon *ngIf="identity" class="logout"  (click)="logout()" slot="end" name="power"></ion-icon>
   </ion-toolbar>
 </ion-header>

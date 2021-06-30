@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {LocalStorageService} from '../../services/localStorage.service';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-header',
@@ -11,13 +12,19 @@ export class HeaderComponent implements OnInit {
   identity: string;
 
   constructor(
-    private localStorageService: LocalStorageService
+    private localStorageService: LocalStorageService,
+    private navCtrl: NavController,
   ) { }
 
-  ngOnInit() {
+  async ngOnInit() {
     // SACAR DATOS USUARIO IDENTIFICADO
-    this.identity = this.localStorageService.getItem('identity');
-    console.log(this.identity)
+    this.identity =   await  this.localStorageService.getItem('identity');
+  }
+
+  async logout() {
+    // Eliminar datos del storage
+   await this.localStorageService.removeItem('identity');
+   this.navCtrl.navigateRoot('/home');
   }
 
 }
