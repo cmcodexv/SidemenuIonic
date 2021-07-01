@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute} from '@angular/router';
 import {LocalStorageService} from '../../services/localStorage.service';
+import { ModalController } from '@ionic/angular';
+import { ModalNewComponent } from '../modal-new/modal-new.component';
 
 
 @Component({
@@ -44,7 +46,8 @@ export class DaysComponent implements OnInit {
 
   constructor(
     private localStorageService: LocalStorageService,
-    private active:ActivatedRoute
+    private active:ActivatedRoute,
+    private modalController: ModalController,
     ) {
       this.active.params.subscribe(param=>this.getModality(param.id))
     }
@@ -94,5 +97,23 @@ export class DaysComponent implements OnInit {
     }
 
   }
+  async openModalNew(item)
+  {
+    var title;
+    console.log(item)
+    if(!item){ title = 'Nuevo registro'; }
+    else { title = 'Editar registro';}
+    const modal = await this.modalController.create({
+      component: ModalNewComponent,
+      cssClass: 'modal-new',
+      mode:'ios',
+      componentProps: {
+        title
+      }
+    });
+    await modal.present();
+
+  }
+
 
 }

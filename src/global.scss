@@ -27,6 +27,7 @@
 
 
 ion-card-title{
+  cursor: pointer;
 
   text-align: center;
   
@@ -182,4 +183,15 @@ ion-note {
 
 ion-item.selected {
   --color: var(--ion-color-primary);
+}
+
+.modal-new .modal-wrapper{
+  height: 55%;
+}
+
+.button-modal{
+  margin-top: 2%;
+}
+.btn-cerrar{
+  color:gray;
 }

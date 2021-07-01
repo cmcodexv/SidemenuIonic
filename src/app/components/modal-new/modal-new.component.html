@@ -1,0 +1,30 @@
+<ion-app>
+  <header>
+    <ion-toolbar color="header">
+      <ion-title class="ion-text-center">{{title}}</ion-title>
+      <ion-buttons slot="end">
+        <ion-button class="btn-cerrar">
+          <ion-icon name="close-circle-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </header>
+  <ion-content class="ion-padding">
+
+    <form>
+      <ion-item>
+        <ion-input type="text" placeholder="nombre" name="nombre"
+                    maxlength="15" required pattern="[a-z A-Z]+">
+        </ion-input>
+      </ion-item>
+     
+        <div class="button-modal">
+          <ion-button  style="float: center;" expand="block" type="submit">
+            <ion-label>Guardar</ion-label> 
+          </ion-button>
+        </div>        
+      
+    </form>
+
+  </ion-content>
+</ion-app>

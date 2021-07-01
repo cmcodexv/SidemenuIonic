@@ -11,12 +11,12 @@ import { AppRoutingModule } from './app-routing.module';
 import{HomeComponent} from './components/home/home.component';
 import{CarrersComponent} from './components/carrers/carrers.component';
 import{HeaderComponent} from './components/header/header.component';
-import{AdministracionComponent} from './pages/administracion/administracion.component';
 import{ModalityComponent} from './components/modality/modality.component';
 import { DaysComponent } from './components/days/days.component';
 import{AnniosComponent}  from './components/annios/annios.component';
 import{ClassComponent}  from './components/class/class.component';
 import{LoginComponent}  from './pages/login/login.component';
+import{ModalNewComponent}  from './components/modal-new/modal-new.component';
 
 
 
@@ -26,12 +26,12 @@ import{LoginComponent}  from './pages/login/login.component';
     HomeComponent,
     CarrersComponent,
     HeaderComponent,
-    AdministracionComponent,
     ModalityComponent,
     DaysComponent, 
     AnniosComponent, 
     ClassComponent,
-    LoginComponent
+    LoginComponent,
+    ModalNewComponent
   ],
   entryComponents: [],
   imports: [BrowserModule, FormsModule, IonicModule.forRoot(), AppRoutingModule],

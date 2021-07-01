@@ -3,6 +3,8 @@ import { ActivatedRoute} from '@angular/router';
 //nos deja consumir la ruta activa o en la ruta que estamos
 //hacer puente de la ruta al componente normal
 import {LocalStorageService} from '../../services/localStorage.service';
+import { ModalController } from '@ionic/angular';
+import { ModalNewComponent } from '../modal-new/modal-new.component';
 @Component({
   selector: 'app-modality',
   templateUrl: './modality.component.html',
@@ -41,7 +43,8 @@ export class ModalityComponent implements OnInit {
   ];
   constructor(
     private active:ActivatedRoute, 
-    private localStorageService: LocalStorageService
+    private localStorageService: LocalStorageService,
+    private modalController: ModalController,
     ) {
       this.active.params.subscribe(param=>this.getCarrers(param.id))
      }
@@ -78,6 +81,24 @@ export class ModalityComponent implements OnInit {
       break;
 
     }
+
+  }
+
+  async openModalNew(item)
+  {
+    var title;
+    console.log(item)
+    if(!item){ title = 'Nuevo registro'; }
+    else { title = 'Editar registro';}
+    const modal = await this.modalController.create({
+      component: ModalNewComponent,
+      cssClass: 'modal-new',
+      mode:'ios',
+      componentProps: {
+        title
+      }
+    });
+    await modal.present();
 
   }
 

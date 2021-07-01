@@ -3,9 +3,6 @@ import {LocalStorageService} from '../../services/localStorage.service';
 import { User } from '../../interfaces/interfaces';
 import { AlertController } from '@ionic/angular';
 import { NavController } from '@ionic/angular';
-// import { Plugins } from '@capacitor/core';
-
-// const { Storage } = Plugins;
 
 @Component({
   selector: 'app-login',

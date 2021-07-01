@@ -1,25 +1,29 @@
 <app-header></app-header>
 <ion-content [fullscreen]="true">
   <br>
-  <ion-button *ngIf="identity" class="nuevo-btn" size="small" color="success">Nuevo</ion-button>
+  <ion-button *ngIf="identity" (click)="openModalNew()" class="nuevo-btn" size="small" color="success">Nuevo</ion-button>
 
 <ion-row>
   <ion-col size-xs="12" size-md="6" size-lg= "6" size-xl="4"  *ngFor= "let s of days;" > 
-    <ion-card  routerLink= "/annios/{{s.id}}"> <!--Se hace el routerLink hacia donde se quiere ir-->
+    <ion-card > <!--Se hace el routerLink hacia donde se quiere ir-->
       <ion-card-header>
         <ion-grid *ngIf="identity">
           <ion-row>
             <ion-col size="6" >
-              <ion-icon color="primary" name="create"></ion-icon>
-              <ion-label color="primary">Editar</ion-label>
+              <ion-button color="white" (click)="openModalNew(1)">
+                <ion-icon color="primary" name="create"></ion-icon>
+                <ion-label color="primary">Editar</ion-label>
+              </ion-button>
             </ion-col>
             <ion-col size="6">
-              <ion-icon color="danger" name="trash"></ion-icon>
-              <ion-label color="danger">Eliminar</ion-label>
+              <ion-button color="white" >
+                <ion-icon color="danger" name="trash"></ion-icon>
+                <ion-label color="danger">Eliminar</ion-label>
+              </ion-button>
             </ion-col>
           </ion-row>
         </ion-grid>
-        <ion-card-title >{{s.title}}</ion-card-title>
+        <ion-card-title  routerLink= "/annios/{{s.id}}">{{s.title}}</ion-card-title>
       </ion-card-header>
     
       <ion-card-content >
