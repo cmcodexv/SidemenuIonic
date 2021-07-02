@@ -1,4 +1,5 @@
 import { Component, OnInit, Input} from '@angular/core';
+import { ModalController } from '@ionic/angular';
 
 
 @Component({
@@ -8,13 +9,21 @@ import { Component, OnInit, Input} from '@angular/core';
 })
 export class ModalNewComponent implements OnInit {
   @Input() title;
-
+ 
   constructor(
+    private modalController: ModalController,
   ) { }
 
   ngOnInit() {
  
   }
+
+  dismiss() {
+    this.modalController.dismiss({
+      'dismissed': true
+    });
+  }
+
 
 
 }

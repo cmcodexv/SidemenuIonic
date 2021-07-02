@@ -17,8 +17,7 @@ import{AnniosComponent}  from './components/annios/annios.component';
 import{ClassComponent}  from './components/class/class.component';
 import{LoginComponent}  from './pages/login/login.component';
 import{ModalNewComponent}  from './components/modal-new/modal-new.component';
-
-
+import{TeachersComponent}  from './pages/teachers/teachers.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +30,8 @@ import{ModalNewComponent}  from './components/modal-new/modal-new.component';
     AnniosComponent, 
     ClassComponent,
     LoginComponent,
-    ModalNewComponent
+    ModalNewComponent,
+    TeachersComponent
   ],
   entryComponents: [],
   imports: [BrowserModule, FormsModule, IonicModule.forRoot(), AppRoutingModule],
