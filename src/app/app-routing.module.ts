@@ -8,6 +8,7 @@ import{AnniosComponent}  from './components/annios/annios.component';
 import { ClassComponent } from './components/class/class.component';
 import { LoginComponent } from './pages/login/login.component';
 import { TeachersComponent } from './pages/teachers/teachers.component';
+import { InfoComponent } from './pages/info/info.component';
 
 const routes: Routes = [
 
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: 'annios/:id', component:AnniosComponent},
   {path: 'class/:id', component:ClassComponent},
   {path: 'teacher', component:TeachersComponent},
+  {path: 'info', component:InfoComponent},
   {path: '**', pathMatch: 'full', redirectTo: 'home'}, //siempre dejar de ultimo
   
   

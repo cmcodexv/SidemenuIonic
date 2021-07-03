@@ -18,6 +18,7 @@ import{ClassComponent}  from './components/class/class.component';
 import{LoginComponent}  from './pages/login/login.component';
 import{ModalNewComponent}  from './components/modal-new/modal-new.component';
 import{TeachersComponent}  from './pages/teachers/teachers.component';
+import{InfoComponent}  from './pages/info/info.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import{TeachersComponent}  from './pages/teachers/teachers.component';
     ClassComponent,
     LoginComponent,
     ModalNewComponent,
-    TeachersComponent
+    TeachersComponent,
+    InfoComponent
   ],
   entryComponents: [],
   imports: [BrowserModule, FormsModule, IonicModule.forRoot(), AppRoutingModule],
