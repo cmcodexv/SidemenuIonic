@@ -18,16 +18,16 @@ export class ClassComponent implements OnInit {
   //array sistemas
   public primerldsistemas=[
 
-     {title:'Contabilidad 1', subtitle:'Prof: Lorem ipsum', entrada:'8:00 am', salida:'9:40 am'},
-     {title:'Tecnicas de lectura y redaccion',subtitle:'Prof: Lorem ipsum ', entrada:'9:45 am', salida:'11:20 am'},
-     {title:'Matematica General',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am', salida:'9:40 am'}
+     {title:'Contabilidad 1', subtitle:'Prof: Lorem ipsum', entrada:'8:00 am', salida:'9:40 am', aula:'Aula de Clases: 5602'},
+     {title:'Tecnicas de lectura y redaccion',subtitle:'Prof: Lorem ipsum ', entrada:'9:45 am', salida:'11:20 am',aula:'Aula de Clases: 5602'},
+     {title:'Matematica General',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am', salida:'9:40 am',aula:'Aula de Clases: 5602'}
 
   ];
 
   public primerjdsistemas=[
 
-    {title:'Geografia e historia',subtitle:'Prof: Lorem ipsum', entrada:'8:00 am', salida:'9:40 am'},
-    {title:'Informatica basica',subtitle:'Prof: Lorem ipsum ', entrada:'9:45 am', salida:'11:20 am'}
+    {title:'Geografia e historia',subtitle:'Prof: Lorem ipsum', entrada:'8:00 am', salida:'9:40 am',aula:'Aula de Clases: 5602'},
+    {title:'Informatica basica',subtitle:'Prof: Lorem ipsum ', entrada:'9:45 am', salida:'11:20 am',aula:'Aula de Clases: 5602'}
     
 
  ];
@@ -108,65 +108,65 @@ export class ClassComponent implements OnInit {
 //Arrays computacion
  public segundoldcomputacion=[
 
-  {title:'Teoria de la computación', subtitle:'Prof: Edgard Monge', entrada:'8:00 am', salida:'9:40 am'},
-  {title:'Inglés técnico',subtitle:' ', entrada:'9:45 am', salida:'11:20 am'},
+  {title:'Teoria de la computación', subtitle:'Prof: Edgard Monge', entrada:'8:00 am', salida:'9:40 am',aula:'Aula de Clases: 5802'},
+  {title:'Inglés técnico',subtitle:' ', entrada:'9:45 am', salida:'11:20 am',aula:'Aula de Clases: 5802'},
   
 
 ];
 
 public segundojdcomputacion=[
 
- {title:'Seminario de formacion integral',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am', salida:'9:40 am'},
- {title:'Programacion 1',subtitle:' ', entrada:'9:45 am', salida:'11:20 am'},
- {title:'Calculo 1',subtitle:'Prof: Lorem Ipsum ', entrada:'11:25 am ', salida:'1:00 pm'}
+ {title:'Seminario de formacion integral',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am', salida:'9:40 am',aula:'Aula de Clases: 5802'},
+ {title:'Programacion 1',subtitle:' ', entrada:'9:45 am', salida:'11:20 am',aula:'Laboratorio C'},
+ {title:'Calculo 1',subtitle:'Prof: Lorem Ipsum ', entrada:'11:25 am ', salida:'1:00 pm',aula:'Aula de Clases: 5802'}
 
 ];
 
 public terceroldcomputacion=[
 
-  {title:'Soporte de equipos computacionales',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am', salida:'9:40 am'},
-  {title:'Sistemas operativos',subtitle:'Prof: Lorem Ipsum', entrada:'9:45 am ', salida:'11:20 am'},
-  {title:'Diseño Gráfico',subtitle:'Prof: Lorem Ipsum', entrada:'11:25 am ', salida:'1:00 pm'}
+  {title:'Soporte de equipos computacionales',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am', salida:'9:40 am',aula:'Laboratorio A'},
+  {title:'Sistemas operativos',subtitle:'Prof: Lorem Ipsum', entrada:'9:45 am ', salida:'11:20 am',aula:'Laboratorio B'},
+  {title:'Diseño Gráfico',subtitle:'Prof: Lorem Ipsum', entrada:'11:25 am ', salida:'1:00 pm',aula:'Laboratorio A'}
 
 ];
 
 public tercerojdcomputacion=[
 
- {title:'Algoritmos y estructuras de datos 2',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am', salida:'9:40 am'},
- {title:'Analisis y diseño de sistemas',subtitle:'Prof: Lorem Ipsum', entrada:'9:45 am ', salida:'11:20 am'}
+ {title:'Algoritmos y estructuras de datos 2',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am', salida:'9:40 am',aula:'Laboratorio C'},
+ {title:'Analisis y diseño de sistemas',subtitle:'Prof: Lorem Ipsum', entrada:'9:45 am ', salida:'11:20 am',aula:'Laboratorio D'}
  
 
 ];
 
 public cuartoldcomputacion=[
 
-  {title:'Innovacion y emprendedurismo',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am ', salida:' 9:40 am'},
-  {title:'Practicas de especializacion',subtitle:'Prof: Lorem Ipsum', entrada:'9:45 am ', salida:'11:20 am'},
+  {title:'Innovacion y emprendedurismo',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am ', salida:' 9:40 am',aula:'Aula de clases: 5804'},
+  {title:'Practicas de especializacion',subtitle:'Prof: Lorem Ipsum', entrada:'9:45 am ', salida:'11:20 am',aula:'Aula de clases: 5804'},
   
 
 ];
 
 public cuartojdcomputacion=[
 
- {title:'Programacion en base de datos',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am', salida:'9:40 am'},
- {title:'Formulacion y gestion de proyectos',subtitle:'Prof: Lorem Ipsum', entrada:'9:45 am ', salida:'11:20 am'},
- {title:'Sistemas digitales',subtitle:'Prof: Lorem Ipsum', entrada:'11:25 am ', salida:'1:00 pm'}
+ {title:'Programacion en base de datos',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am', salida:'9:40 am',aula:'Laboratorio D'},
+ {title:'Formulacion y gestion de proyectos',subtitle:'Prof: Lorem Ipsum', entrada:'9:45 am ', salida:'11:20 am',aula:'Aula de clases: 5804'},
+ {title:'Sistemas digitales',subtitle:'Prof: Lorem Ipsum', entrada:'11:25 am ', salida:'1:00 pm',aula:'Aula de clases: 5804'}
  
 
 ];
 
 public quintoldcomputacion=[
 
-  {title:'Programacion bajo software libre',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am', salida:'9:40 am'},
-  {title:'Redes 2',subtitle:'Prof: Lorem Ipsum', entrada:'9:45 am ', salida:'11:20 am'},
-  {title:'Investigacion aplicada',subtitle:'Prof: Lorem Ipsum', entrada:'11:25 am ', salida:'1:00 pm'}
+  {title:'Programacion bajo software libre',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am', salida:'9:40 am',aula:'Laboratorio D'},
+  {title:'Redes 2',subtitle:'Prof: Lorem Ipsum', entrada:'9:45 am ', salida:'11:20 am',aula:'Laboratorio D'},
+  {title:'Investigacion aplicada',subtitle:'Prof: Lorem Ipsum', entrada:'11:25 am ', salida:'1:00 pm',aula:'Aula de clases: 5805'}
 
 ];
 
 public quintojdcomputacion=[
 
- {title:'Facultativa de carrera 2',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am ', salida:' 9:40 am'},
- {title:'Tecnologia movil',subtitle:'Prof: Lorem Ipsum', entrada:'9:45 am ', salida:'11:20 am'}
+ {title:'Facultativa de carrera 2',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am ', salida:' 9:40 am',aula:'Laboratorio B'},
+ {title:'Tecnologia movil',subtitle:'Prof: Lorem Ipsum', entrada:'9:45 am ', salida:'11:20 am',aula:'Laboratorio A'}
  
 
 ];
@@ -175,44 +175,44 @@ public quintojdcomputacion=[
 //Computacion dominical
 public segundodocomputacion=[
     
-  {title:'Teoria de la computacion',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am ', salida:'9:20 am'},
-  {title:'Seminario de formacion Integral',subtitle:'Prof: Lorem Ipsum', entrada:'9:25 am ', salida:'10:45 am'},
-  {title:'Ingles tecnico',subtitle:'Prof: Lorem Ipsum', entrada:'10:50 am ', salida:' 12:10 pm'},
-  {title:'Programacion 1',subtitle:'Prof: Lorem Ipsum', entrada:'12:50 pm ', salida:'2:10 pm'},
- {title:'Calculo 1',subtitle:'Prof: Lorem Ipsum', entrada:'2:15 pm ', salida:'3:35 pm'}
+  {title:'Teoria de la computacion',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am ', salida:'9:20 am',aula:'Aula de clases: 2404'},
+  {title:'Seminario de formacion Integral',subtitle:'Prof: Lorem Ipsum', entrada:'9:25 am ', salida:'10:45 am',aula:'Aula de clases: 5805'},
+  {title:'Ingles tecnico',subtitle:'Prof: Lorem Ipsum', entrada:'10:50 am ', salida:' 12:10 pm',aula:'Aula de clases: 5805'},
+  {title:'Programacion 1',subtitle:'Prof: Lorem Ipsum', entrada:'12:50 pm ', salida:'2:10 pm',aula:'Laboratorio D'},
+  {title:'Calculo 1',subtitle:'Prof: Lorem Ipsum', entrada:'2:15 pm ', salida:'3:35 pm',aula:'Aula de clases: 5805'}
 
 
 ];
 
 public tercerodocomputacion=[
     
-  {title:'Sistemas operativos',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am ', salida:'9:20 am'},
-  {title:'Algoritmos y estructura de datos 2',subtitle:'Prof: Lorem Ipsum', entrada:'9:25 am ', salida:'10:45 am'},
-  {title:'Analisis y diseño de sistemas 1',subtitle:'Prof: Lorem Ipsum', entrada:'10:50 am ', salida:' 12:10 pm'},
-  {title:'Diseño Grafico',subtitle:'Prof: Lorem Ipsum', entrada:'12:50 pm ', salida:'2:10 pm'},
- {title:'Soporte de equipos computacionales',subtitle:'Prof: Lorem Ipsum', entrada:'2:15 pm ', salida:'3:35 pm'}
+  {title:'Sistemas operativos',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am ', salida:'9:20 am',aula:'Laboratorio D'},
+  {title:'Algoritmos y estructura de datos 2',subtitle:'Prof: Lorem Ipsum', entrada:'9:25 am ', salida:'10:45 am',aula:'Laboratorio C'},
+  {title:'Analisis y diseño de sistemas 1',subtitle:'Prof: Lorem Ipsum', entrada:'10:50 am ', salida:' 12:10 pm',aula:'Laboratorio C'},
+  {title:'Diseño Grafico',subtitle:'Prof: Lorem Ipsum', entrada:'12:50 pm ', salida:'2:10 pm',aula:'Laboratorio A'},
+ {title:'Soporte de equipos computacionales',subtitle:'Prof: Lorem Ipsum', entrada:'2:15 pm ', salida:'3:35 pm',aula:'Laboratorio B'}
 
 
 ];
 
 public cuartodocomputacion=[
     
-  {title:'Programacion en base de datos',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am ', salida:'9:20 am'},
-  {title:'Sistemas digitales',subtitle:'Prof: Lorem Ipsum', entrada:'9:25 am ', salida:'10:45 am'},
-  {title:'Innovacion y emprendedurismo',subtitle:'Prof: Lorem Ipsum', entrada:'10:50 am ', salida:' 12:10 pm'},
-  {title:'Formulacion y gestion de proyectos',subtitle:'Prof: Lorem Ipsum', entrada:'12:50 pm ', salida:'2:10 pm'},
- {title:'Practicas de especializacion',subtitle:'Prof: Lorem Ipsum', entrada:'2:15 pm ', salida:'3:35 pm'}
+  {title:'Programacion en base de datos',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am ', salida:'9:20 am',aula:'Laboratorio B'},
+  {title:'Sistemas digitales',subtitle:'Prof: Lorem Ipsum', entrada:'9:25 am ', salida:'10:45 am',aula:'Laboratorio C'},
+  {title:'Innovacion y emprendedurismo',subtitle:'Prof: Lorem Ipsum', entrada:'10:50 am ', salida:' 12:10 pm',aula:'Aula de clases: 2404'},
+  {title:'Formulacion y gestion de proyectos',subtitle:'Prof: Lorem Ipsum', entrada:'12:50 pm ', salida:'2:10 pm',aula:'Aula de clases: 2404'},
+ {title:'Practicas de especializacion',subtitle:'Prof: Lorem Ipsum', entrada:'2:15 pm ', salida:'3:35 pm',aula:'Aula de clases: 2404'}
 
 
 ];
 
 public quintodocomputacion=[
     
-  {title:'Redes 2',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am ', salida:'9:20 am'},
-  {title:'Tecnologia Movil',subtitle:'Prof: Lorem Ipsum', entrada:'9:25 am ', salida:'10:45 am'},
-  {title:'Programacion bajo software',subtitle:'Prof: Lorem Ipsum', entrada:'10:50 am ', salida:' 12:10 pm'},
-  {title:'Investigacion aplicada',subtitle:'Prof: Lorem Ipsum', entrada:'12:50 pm ', salida:'2:10 pm'},
- {title:'Facultativa de carrera 2',subtitle:'Prof: Lorem Ipsum', entrada:'2:15 pm ', salida:'3:35 pm'}
+  {title:'Redes 2',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am ', salida:'9:20 am',aula:'Laboratorio B'},
+  {title:'Tecnologia Movil',subtitle:'Prof: Lorem Ipsum', entrada:'9:25 am ', salida:'10:45 am',aula:'Laboratorio C'},
+  {title:'Programacion bajo software',subtitle:'Prof: Lorem Ipsum', entrada:'10:50 am ', salida:' 12:10 pm',aula:'Laboratorio D'},
+  {title:'Investigacion aplicada',subtitle:'Prof: Lorem Ipsum', entrada:'12:50 pm ', salida:'2:10 pm',aula:'Aula de clases: 2405'},
+ {title:'Facultativa de carrera 2',subtitle:'Prof: Lorem Ipsum', entrada:'2:15 pm ', salida:'3:35 pm',aula:'Laboratorio B'}
 
 
 ];
@@ -221,27 +221,27 @@ public quintodocomputacion=[
 
 public primerldtelematica=[
 
-  {title:'Contabilidad 1',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am', salida:'9:40 am'},
-  {title:'Tecnicas de lectura y redaccion',subtitle:'Prof: Lorem Ipsum', entrada:'9:45 am ', salida:'11:20 am'},
-  {title:'Matematica General',subtitle:'Prof: Lorem Ipsum', entrada:'11:25 am ', salida:'1:00 pm'}
+  {title:'Contabilidad 1',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am', salida:'9:40 am',aula:'Aula de clases: 5608'},
+  {title:'Tecnicas de lectura y redaccion',subtitle:'Prof: Lorem Ipsum', entrada:'9:45 am ', salida:'11:20 am',aula:'Aula de clases: 5608'},
+  {title:'Matematica General',subtitle:'Prof: Lorem Ipsum', entrada:'11:25 am ', salida:'1:00 pm',aula:'Aula de clases: 5608'}
 
 ];
 
 public primerjdtelematica=[
 
- {title:'Geografia e historia',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am ', salida:' 9:40 am'},
- {title:'Informatica basica',subtitle:'Prof: Lorem Ipsum', entrada:'9:45 am ', salida:'11:20 am'}
+ {title:'Geografia e historia',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am ', salida:' 9:40 am',aula:'Aula de clases: 5608'},
+ {title:'Informatica basica',subtitle:'Prof: Lorem Ipsum', entrada:'9:45 am ', salida:'11:20 am',aula:'Laboratorio B'}
  
 
 ];
 
 public primerdotelematica=[
 
-  {title:'Geografia e historia',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am ', salida:'9:20 am'},
-  {title:'Informatica basica',subtitle:'Prof: Lorem Ipsum', entrada:'9:25 am ', salida:'10:45 am'},
-  {title:'Contabilidad 1',subtitle:'Prof: Lorem Ipsum', entrada:'10:50 am ', salida:' 12:10 pm'},
-  {title:'Tecnicas de lectura y redaccion',subtitle:'Prof: Lorem Ipsum', entrada:'12:50 pm ', salida:'2:10 pm'},
-  {title:'Matematica General',subtitle:'Prof: Lorem Ipsum', entrada:'2:15 pm ', salida:'3:35 pm'}
+  {title:'Geografia e historia',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am ', salida:'9:20 am',aula:'Aula de clases: 2408'},
+  {title:'Informatica basica',subtitle:'Prof: Lorem Ipsum', entrada:'9:25 am ', salida:'10:45 am',aula:'Laboratorio C'},
+  {title:'Contabilidad 1',subtitle:'Prof: Lorem Ipsum', entrada:'10:50 am ', salida:' 12:10 pm',aula:'Aula de clases: 3408'},
+  {title:'Tecnicas de lectura y redaccion',subtitle:'Prof: Lorem Ipsum', entrada:'12:50 pm ', salida:'2:10 pm',aula:'Aula de clases: 2408'},
+  {title:'Matematica General',subtitle:'Prof: Lorem Ipsum', entrada:'2:15 pm ', salida:'3:35 pm',aula:'Aula de clases: 2408'}
   
  
  ];
