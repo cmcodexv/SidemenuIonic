@@ -14,9 +14,9 @@ export class CarrersComponent implements OnInit {
   identity: string;
 
   public carrers = [
-    { title: 'Ingenieria en sistemas', id: 'system',  img:'assets/icon/base-de-datos.svg' },
-    { title: 'Ingenieria en Computacion', id: 'computer', img: "assets/icon/informatica.svg" },
-    {title: 'Ingenieria en Telematica', id: 'telecom', img: "assets/icon/alojamiento-web.svg"},
+    { title: 'Ingeniería en Sistemas', id: 'system',  img:'assets/icon/base-de-datos.svg' },
+    { title: 'Ingeniería en Computación', id: 'computer', img: "assets/icon/informatica.svg" },
+    {title: 'Ingeniería en Telemática', id: 'telecom', img: "assets/icon/alojamiento-web.svg"},
     
   ];
 
