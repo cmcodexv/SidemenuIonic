@@ -1,7 +1,7 @@
 <ion-app>
   <header>
     <ion-toolbar color="header">
-      <ion-title class="ion-text-center">{{title}}</ion-title>
+      <ion-title class="ion-text-center">¡Envía tu sugerencia!</ion-title>
       <ion-buttons slot="end">
         <ion-button class="btn-cerrar" (click)="dismiss()">
           <ion-icon name="close-circle-outline"></ion-icon>
@@ -13,14 +13,24 @@
 
     <form>
       <ion-item>
-        <ion-input type="text" placeholder="nombre" name="nombre"
+        <ion-input type="text" placeholder="correo electrónico" name="nombre"
                     maxlength="15" required pattern="[a-z A-Z]+">
         </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="text" placeholder="asunto" name="nombre"
+                    maxlength="15" required pattern="[a-z A-Z]+">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-textarea placeholder="mensaje" name="nombre"
+                    maxlength="15" required pattern="[a-z A-Z]+">
+        </ion-textarea>
       </ion-item>
      
         <div class="button-modal">
           <ion-button  style="float: center;" disabled="true" expand="block" type="submit">
-            <ion-label>Guardar</ion-label> 
+            <ion-label>Enviar</ion-label> 
           </ion-button>
         </div>        
       

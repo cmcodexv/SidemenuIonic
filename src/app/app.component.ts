@@ -13,7 +13,7 @@ export class AppComponent implements OnInit{
       { title: 'Inicio', url: '/home', icon: 'home' },
       { title: 'Carreras', url: '/carrers', icon: 'reader' },
       // {title: 'Administracion', url: '/administracion', icon: 'person'},
-      { title: 'Información', url: '/information', icon: 'information-circle' }
+      { title: 'Información', url: '/info', icon: 'information-circle' }
   ];
 
   constructor() {}
