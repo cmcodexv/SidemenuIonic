@@ -4,6 +4,7 @@ import { IonicModule } from '@ionic/angular';
 import { HeaderComponent } from './header/header.component';
 import { ModalNewComponent } from './modal-new/modal-new.component';
 import { ModalInfoComponent } from './modal-info/modal-info.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -19,6 +20,7 @@ import { ModalInfoComponent } from './modal-info/modal-info.component';
     ModalInfoComponent
   ],
   imports: [
+    RouterModule,
     CommonModule,
     IonicModule
   ]
