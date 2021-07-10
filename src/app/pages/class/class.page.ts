@@ -20,14 +20,14 @@ export class ClassPage implements OnInit {
    public primerldsistemas=[
  
       {title:'Contabilidad 1', subtitle:'Prof: Lorem ipsum', entrada:'8:00 am', salida:'9:40 am', aula:'Aula de Clases: 5602'},
-      {title:'Tecnicas de lectura y redaccion',subtitle:'Prof: Lorem ipsum ', entrada:'9:45 am', salida:'11:20 am',aula:'Aula de Clases: 5602'},
-      {title:'Matematica General',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am', salida:'9:40 am',aula:'Aula de Clases: 5602'}
+      {title:'Filosofía',subtitle:'Prof: Lorem ipsum ', entrada:'9:45 am', salida:'11:20 am',aula:'Aula de Clases: 5602'},
+      {title:'Matemática General',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am', salida:'9:40 am',aula:'Aula de Clases: 5602'}
  
    ];
  
    public primerjdsistemas=[
  
-     {title:'Geografia e historia',subtitle:'Prof: Lorem ipsum', entrada:'8:00 am', salida:'9:40 am',aula:'Aula de Clases: 5602'},
+     {title:'Geografía e historia',subtitle:'Prof: Lorem ipsum', entrada:'8:00 am', salida:'9:40 am',aula:'Aula de Clases: 5602'},
      {title:'Informatica basica',subtitle:'Prof: Lorem ipsum ', entrada:'9:45 am', salida:'11:20 am',aula:'Aula de Clases: 5602'}
      
  
@@ -35,16 +35,16 @@ export class ClassPage implements OnInit {
  
   public segundoldsistemas=[
  
-   {title:'Contabilidad 2', subtitle:'Prof: Lorem ipsum', entrada:'8:00 am', salida:'9:40 am'},
-   {title:'Tecnicas de investigacion documental',subtitle:'Prof: Lorem ipsum ', entrada:'9:45 am', salida:'11:20 am'},
-   {title:'Calculo 2',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am', salida:'9:40 am'}
+   {title:'Contabilidad 2', subtitle:'Prof: Lorem ipsum', entrada:'8:00 am', salida:'9:40 am', aula:'Aula de Clases: 5602'},
+   {title:'Tecnicas de investigacion documental',subtitle:'Prof: Lorem ipsum ', entrada:'9:45 am', salida:'11:20 am', aula:'Aula de Clases: 5602'},
+   {title:'Calculo 2',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am', salida:'9:40 am', aula:'Aula de Clases: 5602'}
  
   ];
  
   public segundojdsistemas=[
  
-   {title:'Calculo 2',subtitle:'Prof: Lorem ipsum', entrada:'8:00 am', salida:'9:40 am'},
-   {title:'Soporte de equipos computacionales',subtitle:'Prof: Lorem ipsum ', entrada:'9:45 am', salida:'11:20 am'}
+   {title:'Calculo 2',subtitle:'Prof: Lorem ipsum', entrada:'8:00 am', salida:'9:40 am', aula:'Aula de Clases: 5602'},
+   {title:'Soporte de equipos computacionales',subtitle:'Prof: Lorem ipsum ', entrada:'9:45 am', salida:'11:20 am', aula:'Aula de Clases: 5602'}
  
  
   ];
@@ -52,8 +52,8 @@ export class ClassPage implements OnInit {
  
   public tercerldsistemas=[
  
-   {title:'Calculo 2',subtitle:'Prof: Lorem ipsum', entrada:'8:00 am', salida:'9:40 am'},
-   {title:'Fundamentos de programación',subtitle:'Prof: Lorem ipsum ', entrada:'9:45 am', salida:'11:20 am'}
+   {title:'Calculo 2',subtitle:'Prof: Lorem ipsum', entrada:'8:00 am', salida:'9:40 am', aula:'Aula de Clases: 5602'},
+   {title:'Fundamentos de programación',subtitle:'Prof: Lorem ipsum ', entrada:'9:45 am', salida:'11:20 am', aula:'Aula de Clases: 5602'}
  
  
  
@@ -61,18 +61,18 @@ export class ClassPage implements OnInit {
  
   public tercerjdsistemas=[
  
-   {title:'Metodologia de la investigación', subtitle:'Prof: Lorem ipsum', entrada:'8:00 am', salida:'9:40 am'},
-   {title:'Seminario de formacion integral',subtitle:'Prof: Lorem ipsum ', entrada:'9:45 am', salida:'11:20 am'},
-   {title:'Soporte de equipos computacionales 2',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am', salida:'9:40 am'}
+   {title:'Metodologia de la investigación', subtitle:'Prof: Lorem ipsum', entrada:'8:00 am', salida:'9:40 am', aula:'Aula de Clases: 5602'},
+   {title:'Seminario de formacion integral',subtitle:'Prof: Lorem ipsum ', entrada:'9:45 am', salida:'11:20 am', aula:'Aula de Clases: 5602'},
+   {title:'Soporte de equipos computacionales 2',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am', salida:'9:40 am', aula:'Aula de Clases: 5602'}
  
  
   ];
  
   public cuartoldsistemas=[
  
-   {title:'Programación algoritmica', subtitle:'Prof: Lorem ipsum', entrada:'8:00 am', salida:'9:40 am'},
-   {title:'Base de datos',subtitle:'Prof: Lorem ipsum ', entrada:'9:45 am', salida:'11:20 am'},
-   {title:'Seguridad informatica',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am', salida:'9:40 am'}
+   {title:'Programación algoritmica', subtitle:'Prof: Lorem ipsum', entrada:'8:00 am', salida:'9:40 am', aula:'Aula de Clases: 5602'},
+   {title:'Base de datos',subtitle:'Prof: Lorem ipsum ', entrada:'9:45 am', salida:'11:20 am', aula:'Aula de Clases: 5602'},
+   {title:'Seguridad informatica',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am', salida:'9:40 am', aula:'Aula de Clases: 5602'}
  
  
  
@@ -80,8 +80,8 @@ export class ClassPage implements OnInit {
  
   public cuartojdsistemas=[
  
-   {title:'Programacion en base de datos',subtitle:'Prof: Lorem ipsum', entrada:'8:00 am', salida:'9:40 am'},
-   {title:'Programacion orientada a objetos',subtitle:'Prof: Lorem ipsum ', entrada:'9:45 am', salida:'11:20 am'}
+   {title:'Programacion en base de datos',subtitle:'Prof: Lorem ipsum', entrada:'8:00 am', salida:'9:40 am', aula:'Aula de Clases: 5602'},
+   {title:'Programacion orientada a objetos',subtitle:'Prof: Lorem ipsum ', entrada:'9:45 am', salida:'11:20 am', aula:'Aula de Clases: 5602'}
  
  
  
@@ -89,17 +89,17 @@ export class ClassPage implements OnInit {
  
   public quintoldsistemas=[
  
-   {title:'Inteligencia de negocios',subtitle:'Prof: Lorem ipsum', entrada:'8:00 am', salida:'9:40 am'},
-   {title:'Investigacion aplicada',subtitle:'Prof: Lorem ipsum ', entrada:'9:45 am', salida:'11:20 am'}
+   {title:'Inteligencia de negocios',subtitle:'Prof: Lorem ipsum', entrada:'8:00 am', salida:'9:40 am', aula:'Aula de Clases: 5602'},
+   {title:'Investigacion aplicada',subtitle:'Prof: Lorem ipsum ', entrada:'9:45 am', salida:'11:20 am', aula:'Aula de Clases: 5602'}
  
  
   ];
  
   public quintojdsistemas=[
  
-   {title:'Ingenieria del software', subtitle:'Prof: Lorem ipsum', entrada:'8:00 am', salida:'9:40 am'},
-   {title:'Programación web',subtitle:'Prof: Lorem ipsum ', entrada:'9:45 am', salida:'11:20 am'},
-   {title:'Programación movil',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am', salida:'9:40 am'}
+   {title:'Ingenieria del software', subtitle:'Prof: Lorem ipsum', entrada:'8:00 am', salida:'9:40 am', aula:'Aula de Clases: 5602'},
+   {title:'Programación web',subtitle:'Prof: Lorem ipsum ', entrada:'9:45 am', salida:'11:20 am', aula:'Aula de Clases: 5602'},
+   {title:'Programación movil',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am', salida:'9:40 am', aula:'Aula de Clases: 5602'}
  
  
  
@@ -223,7 +223,7 @@ export class ClassPage implements OnInit {
  public primerldtelematica=[
  
    {title:'Contabilidad 1',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am', salida:'9:40 am',aula:'Aula de clases: 5608'},
-   {title:'Tecnicas de lectura y redaccion',subtitle:'Prof: Lorem Ipsum', entrada:'9:45 am ', salida:'11:20 am',aula:'Aula de clases: 5608'},
+   {title:'Filosofía',subtitle:'Prof: Lorem Ipsum', entrada:'9:45 am ', salida:'11:20 am',aula:'Aula de clases: 5608'},
    {title:'Matematica General',subtitle:'Prof: Lorem Ipsum', entrada:'11:25 am ', salida:'1:00 pm',aula:'Aula de clases: 5608'}
  
  ];
@@ -241,7 +241,7 @@ export class ClassPage implements OnInit {
    {title:'Geografia e historia',subtitle:'Prof: Lorem Ipsum', entrada:'8:00 am ', salida:'9:20 am',aula:'Aula de clases: 2408'},
    {title:'Informatica basica',subtitle:'Prof: Lorem Ipsum', entrada:'9:25 am ', salida:'10:45 am',aula:'Laboratorio C'},
    {title:'Contabilidad 1',subtitle:'Prof: Lorem Ipsum', entrada:'10:50 am ', salida:' 12:10 pm',aula:'Aula de clases: 3408'},
-   {title:'Tecnicas de lectura y redaccion',subtitle:'Prof: Lorem Ipsum', entrada:'12:50 pm ', salida:'2:10 pm',aula:'Aula de clases: 2408'},
+   {title:'Filosofía',subtitle:'Prof: Lorem Ipsum', entrada:'12:50 pm ', salida:'2:10 pm',aula:'Aula de clases: 2408'},
    {title:'Matematica General',subtitle:'Prof: Lorem Ipsum', entrada:'2:15 pm ', salida:'3:35 pm',aula:'Aula de clases: 2408'}
    
   

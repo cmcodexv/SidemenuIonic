@@ -3,8 +3,13 @@
     <ion-menu contentId="main-content" type="overlay" class="my-custom-menu">
       <ion-content>
         <ion-list id="inbox-list">
-          <ion-list-header>   <div class="text-men">Portal de Horarios Del Departamento de Computación</div> </ion-list-header>
-          <img src="assets/icon/LogoUnan.jpg" alt="aa"> 
+          <ion-list-header>   
+            <img src="assets/icon/LogoUnan.jpg" alt="aa"> 
+            <div class="text-men">
+              Portal de Horarios Del Departamento de Computación
+            </div>
+          </ion-list-header>
+          <br>
           <br>
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
